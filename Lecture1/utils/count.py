@@ -7,7 +7,7 @@ def count_word(s, w):
     
     assert isinstance(s, str) # 第一引数の型をチェック
     assert isinstance(w, str) and len(w) == 1 # 第二引数の型と文字列の長さをチェック
-    ret = 0
+    ret = 0 # カウント数を保存
     for i in range(len(s)):
         if s[i] == w:
             ret = add(ret, 1) # 一致したとき加算

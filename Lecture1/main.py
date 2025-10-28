@@ -5,7 +5,7 @@ if __name__ == "__main__":
     print("e:", count_word(s, "e")) # 1
     print("o:", count_word(s, "o")) # 2
     print("l:", count_word(s, "l")) # 3
-    count_word(s, "aaa")
+    count_word(s, "aaa") # 通常ならエラーが発生
 
     
 

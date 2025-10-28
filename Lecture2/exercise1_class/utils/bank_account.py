@@ -2,10 +2,15 @@
 
 class BankAccount:
 
+    """ コンストラクタ """
     def __init__(self, name):
         self.name = name # 名前
         self.balance = 0 # 預金
         self.interest_rate = 0.01 # 金利
+
+
+
+
 
     """ 名前を出力する関数 """
     def get_name(self):

@@ -5,12 +5,14 @@ from torch.nn import Module
 
 class ExerciseModel(Module):
     
+    """ コンストラクタ """
     def __init__(self, mytensor: torch.Tensor, elem_add: int, elem_multiply: int):
         super().__init__()
         self.mytensor = mytensor
         self.elem_add = elem_add
         self.elem_multiply = elem_multiply
 
+    """ Forward """
     def forward(self, x: torch.Tensor):
         # 入力とテンソルの形状が同じか確認
         assert x.size() == self.mytensor.size(), "input size must match self.tensor size."

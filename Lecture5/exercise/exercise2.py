@@ -48,7 +48,7 @@ class MyDataset(Dataset):
 
 if __name__ == "__main__":
 
-    data_directory = "../../05/exercise/data"
+    data_directory = "../../Lecture4/exercise/data"
     data_directory_path = Path(data_directory).resolve()
     dir_list = sorted(list(data_directory_path.glob("*")))
     file_list = []
